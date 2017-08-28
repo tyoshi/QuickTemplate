@@ -9,12 +9,6 @@ import jinja2
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from inflection import inflection
 
-"""
-TODO:
-1. ドキュメント整備
-2. 公開方法調査
-"""
-
 
 def plugin_loaded():
     # Create plugin template, data default location
