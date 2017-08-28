@@ -1,0 +1,10 @@
+{
+    "template_path": "template",
+    "data_path": "data",
+    "project_settings": {
+        // "your_project_name:" {
+        //     "template_path": "C:\\workspace\\your_project\\quick_template\\template",
+        //     "data_path": "C:\\workspace\\your_project\\quick_template\\data"
+        // }
+    }
+}

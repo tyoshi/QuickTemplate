@@ -1,0 +1,8 @@
+[
+    {"caption":"QuickTemplate","command":"quick_template"},
+    {"caption":"QuickTemplate apply template", "command": "quick_template_apply_template"},
+    {"caption":"QuickTemplate create new template file", "command": "quick_template_create_template"},
+    {"caption":"QuickTemplate create new data file", "command": "quick_template_create_data"},
+    {"caption":"QuickTemplate open template file", "command": "quick_template_open_template"},
+    {"caption":"QuickTemplate open data file", "command": "quick_template_open_data"}
+]
