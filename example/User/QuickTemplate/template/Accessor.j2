@@ -1,0 +1,17 @@
+{% for field in fields %}
+    /**
+     * {{field.logical_name}} を返します。
+     * @return {{field.logical_name}}
+     */
+    public{% if field.static %} static{% endif %} {{field.type}} {% if field.type == 'boolean' %}is{% else %}get{% endif %}{{inflection.camelize(field.name)}}(){
+        return this.{{field.name}};
+    }
+{% if not field.final %}
+    /**
+     * {{field.logical_name}} を設定します。
+     * @param {{field.name}} {{field.logical_name}}
+     */
+    public{% if field.static %} static{% endif %} void set{{inflection.camelize(field.name)}}({{field.type}} {{field.name}}){
+        this.{{field.name}} = {{field.name}};
+    }
+{% endif %}{% endfor %}

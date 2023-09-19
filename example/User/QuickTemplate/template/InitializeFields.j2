@@ -1,0 +1,2 @@
+{% for field in fields %}{% if not field.static %}
+        this.{{field.name}} = SOURCE.get{{inflection.camelize(field.name)}}();{% endif %}{% endfor %}

@@ -1,0 +1,8 @@
+    /** {@inheritDoc} */
+    @Override
+    public String toString(){
+        return new StringJoiner(", ", getClass().getSimpleName() + "{", "}"){% for field in fields %}{% if not field.static %}
+                .add("{{field.name}}="+{{field.name}}){% endif %}{% endfor %}
+                .toString();
+    }
+

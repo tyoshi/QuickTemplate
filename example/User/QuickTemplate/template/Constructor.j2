@@ -1,0 +1,7 @@
+    /**
+     * コンストラクタ{% for field in fields %}{% if not field.static %}
+     * @param {{field.name}} {{field.logical_name}}{% endif %}{% endfor %}
+     */
+    public YOURCLASSNAME({% for field in fields %}{% if not field.static %}{{field.type}} {{field.name}}{% if not loop.last %}, {% endif %}{% endif %}{% endfor %}){{'{'}}{% for field in fields %}{% if not field.static %}
+        this.{{field.name}} = {{field.name}};{% endif %}{% endfor %}
+    }
